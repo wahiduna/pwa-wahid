@@ -1,4 +1,7 @@
+  
+//konstanta untuk nama cache 
 const cacheName = "mgs-cache-v1";
+// konstanta yang berisi array assets yang akan di cache
 const assets = [
     '/',
     'index.html',
@@ -38,18 +41,21 @@ const assets = [
 
 ];
 
-self.addEventListener("install", event => {
-    console.log("install cache");
+// install service worker
+self.addEventListener("install", event => {    
     event.waitUntil(
+    //buka asset yang akan dicache
     caches.open(cacheName).then(cache => {
-        console.log("success install");
+        // tambahkan/simpan asset kedalam cache 
       cache.addAll(assets);
     })
   );
 });
 
+//  service worker mulai menerima event fetch
 self.addEventListener('fetch', event => {
     event.respondWith(
+    // cek cache sesuai request, jika ada response yang cocok maka tampilkan dari cache dan jika tidak fetch ulang dari network sesuai request
     caches.match(event.request).then(res => {
       return res || fetch(event.request);
     })

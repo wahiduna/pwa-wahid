@@ -9,17 +9,30 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <meta name="theme-color" content="#df3348"/>
+  <!-- canonical digunakan untuk membantu webmaster mencegah masalah duplikat pada pembuatan konten -->
   <link rel="canonical" href="https://pwa-wahid.herokuapp.com/" />
+  <!--  manifest.json berisi berbagai informasi seperti nama website, ikon, ukuran yang digunakan, warna default, dan halaman awal -->
+  <!-- Berhubung JSON tidak support comment maka penjelasan manifest sebagai berikut
+  theme_color : digunakan untuk mengatur warna tema aplikasi
+  background_color : digunakan untuk mengatur warna background aplikasi
+  display : digunakan untuk mengatur tampilan aplikasi, standalone berarti aplikasi nantinya akan berjalan sendiri terpisah dari broser
+  scope :  digunakan untuk mengatur scope navigasi pada web browser
+  start_url : digunakan untuk mengatur halaman mana yang akan dibuka pertama kali setelah splash screen
+  name : digunakan untuk mengatur nama aplikasi
+  short_name : digunakan untuk mengatur nama launcher
+  description : digunakan untuk memberi penjelasan tentang aplikasi
+  icons : digunakan untuk icon aplikasi dengan kontek yang berbeda -->
   <link rel="manifest" href="manifest.json">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
+  <!-- Icon web  -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Penggunaan CSS Files untuk responsive -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,15 +40,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Template style CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Scaffold - v4.1.0
-  * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -44,10 +50,12 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
+      <!-- Logo header  -->
       <div class="logo me-auto">
         <h1><a href="index.html">Mulia Group</a></h1>
       </div>
 
+      <!-- Navbar alias menu atas  -->
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
@@ -60,6 +68,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
+      <!-- url sosial media  -->
       <div class="header-social-links d-flex align-items-center">
         <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
         <a href="https://web.facebook.com/muliagrupCPharun/?_rdc=1&_rdr" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -70,9 +79,8 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Konten website ======= -->
   <section id="hero">
-
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
@@ -88,11 +96,12 @@
       </div>
     </div>
 
-  </section><!-- End Hero -->
+  </section><!-- End Konten -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
+    <!-- Berisi tentang usaha mulia group  -->
     <section id="about" class="about">
       <div class="container">
 
@@ -119,6 +128,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Features Section ======= -->
+    <!-- Berisi tentang paket yang disediakan  -->
     <section id="features" class="features">
       <div class="container">
 
@@ -181,6 +191,7 @@
     </section><!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
+    <!-- Berisi tentang layanan yang disediakan  -->
     <section id="services" class="services section-bg">
       <div class="container">
 
@@ -228,6 +239,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Portfolio Section ======= -->
+    <!-- Berisi tentang protofolio proyek yang pernah dikerjakan  -->
     <section id="portfolio" class="portfolio">
       <div class="container">
 
@@ -396,6 +408,7 @@
     </section><!-- End Cta Section -->
 
     <!-- ======= Contact Section ======= -->
+    <!-- Berisi kontak yang dapat dihubungi  -->
     <section id="contact" class="contact section-bg">
       <div class="container">
 
@@ -428,9 +441,9 @@
             </div>
 
           </div>
-
+          <!-- Berisi tentang map lokasi usaha  -->
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.9183736172116!2d110.3434758549138!3d-7.71750970706588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59c3d20c02cf%3A0xbb51ecb743f8c22f!2sPersewaan%20Tenda%20%26%20Event%20Organizer%20Mulia%20Grup%20Sleman!5e0!3m2!1sid!2sid!4v1621238824981!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d698.9183736172116!2d110.3434758549138!3d-7.71750970706588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59c3d20c02cf%3A0xbb51ecb743f8c22f!2sPersewaan%20Tenda%20%26%20Event%20Organizer%20Mulia%20Grup%20Sleman!5e0!3m2!1sid!2sid!4v1621238824981!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
         </div>
@@ -466,11 +479,11 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
+  
+  <!-- File JS yang digunakan untuk memanggil service worker -->
   <script src="assets/js/app.js"></script>
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
