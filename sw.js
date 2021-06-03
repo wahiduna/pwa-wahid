@@ -22,8 +22,10 @@ const assets = [
 ];
 
 self.addEventListener("install", event => {
+    console.log("install cache");
     event.waitUntil(
     caches.open(cacheName).then(cache => {
+        console.log("success install");
       cache.addAll(assets);
     })
   );
