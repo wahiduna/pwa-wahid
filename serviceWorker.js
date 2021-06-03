@@ -1,9 +1,7 @@
-const cacheName = 'mgs-cache-v1';
+const cacheName = "mgs-cache-v1";
 const assets = [
     '/',
     'index.html',
-    'css/style.css',
-    'js/app.js',
     'assets/img/favicon.png',
     'assets/img/apple-touch-icon.png',
     'assets/vendor/aos/aos.css',
@@ -13,6 +11,7 @@ const assets = [
     'assets/vendor/glightbox/css/glightbox.min.css',
     'assets/vendor/swiper/swiper-bundle.min.css',
     'assets/css/style.css',
+    'assets/js/main.js',
     'assets/vendor/aos/aos.js',
     'assets/vendor/bootstrap/js/bootstrap.bundle.min.js',
     'assets/vendor/glightbox/js/glightbox.min.js',
