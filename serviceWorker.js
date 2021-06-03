@@ -11,6 +11,7 @@ const assets = [
     'assets/vendor/glightbox/css/glightbox.min.css',
     'assets/vendor/swiper/swiper-bundle.min.css',
     'assets/css/style.css',
+    'assets/img/portfolio/portfolio-1.jpg',
     'assets/js/main.js',
     'assets/vendor/aos/aos.js',
     'assets/vendor/bootstrap/js/bootstrap.bundle.min.js',
